@@ -40,8 +40,8 @@ TARGET_VOCAB_SIZE = 50000
 
 EMBEDDING_SIZE = 512
 # size of LSTM hidden state vectors
-# this is new: 1024 -> 1024*1.2
-HIDDEN_SIZE = 1228
+# this is new: 1024 -> 1024*1.5
+HIDDEN_SIZE = 1536
 
 LEARNING_RATE = 0.0001
 

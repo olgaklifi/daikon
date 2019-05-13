@@ -55,8 +55,8 @@ def read(filename: str, vocab) -> Iterator[List[int]]:
     """
     lines = read_lines(filename)
     for line in lines:
-	# new
-	line = reversed(line)
+	# new: this doesn't work
+	# line = reversed(line)
         yield [vocab.get_id(word) for word in line]
 
 

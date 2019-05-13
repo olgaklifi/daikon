@@ -120,8 +120,9 @@ def translate_file(load_from: str, input_file_handle: io.TextIOWrapper, output_f
         saver.restore(session, os.path.join(load_from, C.MODEL_FILENAME))
 
         for line in input_file_handle:
-		# new:
-		line = reversed(line)
+	    # new: this didn't work for train().
+	    # Hence, discarded here.
+	    # line = reversed(line)
 
             translation = translate_line(session, line, source_vocab, target_vocab, encoder_inputs, decoder_inputs, decoder_targets, decoder_logits)
             output_file_handle.write(translation + "\n")

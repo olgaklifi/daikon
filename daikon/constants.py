@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 # Authors:
@@ -39,7 +39,7 @@ SOURCE_VOCAB_SIZE = 50000
 TARGET_VOCAB_SIZE = 50000
 
 EMBEDDING_SIZE = 512
-# size of LSTM hidden state vectors
+# size of LSTM hidden layers
 # this is new: 1024 -> 1024*1.5
 HIDDEN_SIZE = 1536
 
